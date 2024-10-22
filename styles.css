@@ -226,7 +226,7 @@ td {
 }
 
 .Hero {
-  background-image: url('/images/tokyo.jpg'); 
+  background-image: url('/images/tokyo.jpg');
   background-size: cover;
   min-height: 20rem;
   display: flex;
@@ -662,7 +662,7 @@ a[href$=".docx"] {
 }
 
   .NavbarlistTop:hover { 
-    right: 75%;
+    right: 60%;
   }
   
 
