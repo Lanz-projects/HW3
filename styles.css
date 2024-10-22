@@ -1,0 +1,725 @@
+/* Global Styles */
+body {
+  background-color: rgb(255, 184, 198);
+}
+
+/* Logo Styles */
+#logo, #LogoFooter {
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+/* Header and Navigation Bar */
+header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+#maintitle {
+  display: flex;
+  align-items: center; 
+  flex-grow: 1; 
+  font-size: 24px;
+}
+
+#maintitle span {
+  margin-left: 5%; 
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end; 
+  flex-grow: 1; 
+  margin-right: 15%;
+}
+
+/* Top Navigation Bar */
+#topnavigation-container {
+  padding: 0.5rem;
+  border: 2px solid black;
+  background-color: #f493a7;
+  max-width: 100%;
+  display: flex;
+}
+
+.NavbarlistTop {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  align-items: center;
+  flex-wrap: wrap
+}
+
+.NavbarlistTop a {
+  border: 2px solid black;
+  padding: 3%;
+  border-radius: 10%;
+  text-align: center;
+  min-width: 6rem;
+  display: block;  
+}
+
+.NavbarlistTop li:nth-child(even) a {
+  background-color: rgb(233, 115, 115); 
+}
+
+.NavbarlistTop li:nth-child(odd) a {
+  background-color: rgb(209, 129, 129); 
+}
+
+
+/* Footer */
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  padding: 10px;
+  border: 1px solid black;
+  background-color: #f493a7;
+  margin-top: 5px;
+  max-width: 100%; 
+}
+
+#footer em {
+  font-size: 14px;
+  text-align: center;
+}
+
+#bottomnav {
+  display: flex;
+  justify-content: center; 
+  margin-top: 1rem;
+}
+
+.NavbarlistBottom {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.NavbarlistBottom a {
+  border: 2px solid black;
+  padding: 3%;
+  border-radius: 10%;
+  text-align: center;
+  min-width: 150px;
+  display: block;  
+}
+
+.NavbarlistBottom li:nth-child(even) a {
+  background-color: rgb(233, 115, 115); 
+}
+
+.NavbarlistBottom li:nth-child(odd) a {
+  background-color: rgb(209, 129, 129); 
+}
+
+#footer-content {
+  margin-left: 25%;
+}
+
+/* Section Layout */
+#Welcome, #BasicInfo, #Featured {
+  margin-bottom: 50px;
+}
+
+#Basic-Info-Container {
+  border: 2px solid black; 
+  padding: 2rem;
+}
+
+#ContactInformation {
+  width: 100%;
+  border: 2px solid black;
+  height: auto;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+#Flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 1.5rem; 
+  width: 100%;
+  height: 100%;
+}
+
+/* Specific Elements */
+.First-Paragraph::first-letter {
+  font-size: 30px;
+  color: purple;
+}
+
+.First-Paragraph::first-line {
+  font-style: italic;
+}
+
+.MapofJapan{
+  max-width: 100%;
+}
+
+.Foodpic {
+  height: 100%;
+  width: 100%;
+  border: 3px black solid;
+}
+
+
+.Block {
+  background-image: url(/images/JapaneseBackgroundArtjpg.jpg); 
+  height: 10rem;
+  width: 100%;
+  overflow: scroll;
+  padding: 2%;
+  margin: 1%;
+  border-radius: 10px; 
+  border: 10px solid transparent; 
+  border-image: url(/images/Sakura.jpg) 30 round; 
+  font-size: larger;
+}
+
+.Block p {
+  background-color: rgba(254, 189, 189, 0.6);
+  margin: 0;
+}
+.Block ol {
+  background-color: rgba(254, 189, 189, 0.6);
+}
+td {
+  border: 1px solid black;
+  padding: 2px;
+}
+
+.Fun-Facts > li {
+  background-image: linear-gradient(rgb(231, 134, 134), pink);
+  width: auto; 
+  max-width: 300px; 
+  padding: 10px; 
+  margin: 10px; 
+}
+
+#GeneralInfo + section {
+  font-size: larger;
+}
+
+
+.CitySection {
+  background-image: linear-gradient(rgb(253, 191, 255), rgb(238, 123, 223));
+  width: 100%; 
+  margin: auto;
+  font-size: large;
+}
+
+.City-Container {
+  border: 4px solid rgb(226, 146, 146); 
+  border-radius: 10px; 
+  max-width: 100%;
+
+}
+
+.Hero {
+  background-image: url('/images/tokyo.jpg'); 
+  background-size: cover;
+  min-height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  border: 3px black solid;
+  margin-top: 1rem;
+  max-width: 100%;
+}
+
+#WelcomeMessage {
+  font-weight: bold;
+  Color: white;
+}
+
+.Floating-Button {
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  width: 90px;
+  height: 50px;
+  background-color: #7dbdf9;
+  color: #fff;
+  border-radius: 50%;
+  border: 1px black solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  }
+
+/* Anchor Related CSS */
+a:link {
+  color: green; 
+}
+a:hover {
+  color: yellow;
+  font-style: italic;
+}
+a:active {
+  color: red;
+  font-style: italic;
+}
+a:visited {
+  color: purple;
+  font: bold;
+}
+
+/* Specific Anchors */
+a[href$=".pdf"] {
+  background: url(/images/icons8-pdf-48.png) no-repeat left center;
+  padding-left: 25px; 
+  background-size: 24px 24px; 
+  display: flex; 
+  align-items: center; 
+}
+
+a[href$=".docx"] {
+  background: url(/images/icons8-docx-64.png) no-repeat left center;
+  padding-left: 25px; 
+  background-size: 24px 24px; 
+  display: flex; 
+  align-items: center; 
+}
+
+/* Places Page */
+.City-pic {
+  width: 100%;
+  height: 100%;
+  border: 4px black solid;
+  margin-bottom: 1rem;;
+}
+
+
+
+/*  Food Page */
+
+.food-pic {
+  width: 100%;
+  height: 100%;
+  border: 3px black solid;
+  box-shadow: 3px  4px rgb(199, 166, 166);
+}
+
+
+
+/* Contact.html */
+.contact-form, .form  {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(249, 207, 214);
+  padding: 0.5rem;
+}
+
+.contact-form p {
+  font-weight: bold;
+}
+
+.textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 2%;
+  background-color: #f9f9f9;
+  color: #6d5e5e;
+}
+
+.textarea-message {
+  height: 5rem;
+  padding: 0.5rem ; 
+  border: 1px solid #ccc;
+  border-radius: 2%;
+  background-color: #f9f9f9;
+  color: #6d5e5e;
+}
+
+
+.button-mimic {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: #40d145;
+  color: rgb(8, 0, 0);
+  text-align: center;
+}
+
+.button-mimic:hover {
+  background-color: #1a8b1f;
+}
+
+.map {
+  background-color: rgb(249, 207, 214);
+  padding: 1rem;
+}
+.contact-details {
+  padding: 0.5rem;
+  background-color: rgb(249, 207, 214);
+}
+
+
+/* About Page */
+.cherry-pic {
+  width: 100%;
+  min-height: 15rem;
+}
+
+
+.Team-Members{
+  display: flex;
+  flex-direction: column;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #ffffff;
+  border: 2px solid #f3d2d2;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0.5rem;
+  height: auto; 
+  width: 70%;
+  max-width: 80%;
+}
+
+.member-content {
+  border: 2px black solid;
+  height: auto;
+  max-width: 100%;
+  padding: 1rem;
+  width: 75%;
+  align-self: center;
+}
+
+
+.member-pic {
+  max-width: 60%;
+  max-height: 60%;
+  align-self: center;
+  border: 3px rgb(228, 223, 223) solid;
+  margin: 1rem;
+}
+
+.member-name {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.Japan-client-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  border: 2px white solid;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: white;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+
+}
+
+.client-photo {
+  border: 2px black solid;
+  padding: 1rem; 
+  text-align: center; 
+  
+}
+
+.photo-from-client {
+  width: 100%; /* Make the image take full width */
+  min-height: 10rem; 
+  border: 2px rgb(98, 90, 90) solid;
+}
+
+
+.photo-from-client:hover {
+  transform: scale(1.1); 
+}
+
+.client-quote {
+  padding-top: 0.75rem;
+}
+
+
+
+
+
+.Products-Page-Container {
+  display: flex;
+  margin: 0 auto;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  flex-grow: 1;
+  background-color: #f8e8e8;
+  padding: 1em;
+  width: 100%; 
+}
+
+.sidebar ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  margin: 0.5rem;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  text-align: center; 
+}
+
+.categories-list {
+  font-style: italic;
+}
+
+/* Product Grid Styles */
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 1em;
+  padding: 1em;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #f8e8e8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1em;
+  min-height: 20rem; 
+}
+
+.product h3 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+.product p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 1em; /* Add spacing before the button */
+}
+
+.buy {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  align-self: center;
+}
+
+.buy:hover {
+  background-color: #45a049;
+}
+
+.main-pic {
+  max-width: 100%;
+  height: auto; 
+  border: 2px rgb(82, 76, 76) solid;
+  margin-bottom: 1em; 
+}
+
+/* Media Queries for Responsive Layouts */
+@media (max-width: 328px) {
+  .Products-Page-Container {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    width: auto;
+    flex: none;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    flex: 1;
+  }
+
+  html {
+    font-size: 22px;
+  }
+
+  /* Top Navigation Bar */
+  #topnavigation-container {
+    border: 0px solid black;
+    background-color: rgb(255, 184, 198);
+  }
+
+  #logo-test{
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: block;
+  }
+
+  .NavbarlistTop {
+    position: fixed;
+    right: 95%;
+    transition: 0.5s;
+    min-width: 30%;
+    max-width: 60%;
+    max-height: 80%; 
+    height: auto;
+    padding-right: 2rem;
+    padding-left: 5rem;
+    background: hsl(347, 23%, 35%, 0.7);
+    color: white;
+    border-radius: 2%;
+    list-style: none;
+    display: flex; 
+    gap: 1rem; 
+    height: auto;
+    align-content: flex-end;
+    flex-direction: column;
+}
+
+  .NavbarlistTop:hover { 
+    right: 40%;
+  }
+  
+
+  .NavbarlistBottom {
+    display: none;
+
+  }
+
+
+}
+
+@media (min-width: 329px) and (max-width: 768px){
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .sidebar {
+    width: auto;
+    flex: none;
+  }
+
+  html {
+    font-size: 18px;
+  }
+
+  /* Top Navigation Bar */
+  #topnavigation-container {
+    border: 0px solid black;
+    background-color: rgb(255, 184, 198);
+  }
+
+  #logo-test{
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: block;
+  }
+
+  .NavbarlistTop {
+    position: fixed;
+    right: 97%;
+    transition: 0.5s;
+    min-width: 30%;
+    max-width: 60%;
+    max-height: 80%; 
+    height: auto;
+    padding-right: 2rem;
+    padding-left: 10rem;
+    background: hsl(347, 23%, 35%, 0.7);
+    color: white;
+    border-radius: 2%;
+    list-style: none;
+    display: flex; 
+    gap: 1rem; 
+    height: auto;
+    align-content: flex-end;
+    flex-direction: column;
+}
+
+  .NavbarlistTop:hover { 
+    right: 75%;
+  }
+  
+
+  .NavbarlistBottom {
+    display: none;
+
+  }
+
+
+}
+
+@media (min-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .sidebar {
+    width: auto;
+    flex: none;
+  }
+
+
+  html {
+    font-size: 16px;
+  }
+
+  #topnavigation-container {
+    padding: 0.5rem;
+    border: 1px solid black;
+    background-color: #f493a7;
+    max-width: 100%;
+    display: flex;
+  }
+  
+  .NavbarlistTop {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    align-items: center;
+    flex-wrap: wrap
+  }
+  
+  .NavbarlistTop a {
+    border: 2px solid black;
+    padding: 3%;
+    border-radius: 10%;
+    text-align: center;
+    min-width: 6rem;
+    display: block;  
+  }
+  
+  .NavbarlistTop li:nth-child(even) a {
+    background-color: rgb(233, 115, 115); 
+  }
+  
+  .NavbarlistTop li:nth-child(odd) a {
+    background-color: rgb(209, 129, 129); 
+  }
+  
+}
